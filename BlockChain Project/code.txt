@@ -1,0 +1,55 @@
+solidity code for smart contract on report card.sol
+
+
+pragma solidity ^0.4.17 <0.7.0;
+
+contract ReportCard{
+    
+    string public StudentName;
+    string public StudentRollNo;
+    string public StudentBatch;
+    uint256 public StudMarksSub1;
+    uint256 public StudMarksSub2;
+    uint256 public StudMarksSub3;
+    uint256 public StudMarksSub4;
+    string public StudentStatus;
+    
+    function ReportCard(string newStudentName,string newStudentRollNo,string newStudentBatch,uint256 newStudMarksSub1,uint256 newStudMarksSub2,uint256 newStudMarksSub3,uint256 newStudMarksSub4,string newStudentStatus)public{
+        StudentName = newStudentName;
+        StudentRollNo = newStudentRollNo;
+        StudentBatch = newStudentBatch;
+        StudMarksSub1 = newStudMarksSub1;
+        StudMarksSub2 = newStudMarksSub2;
+        StudMarksSub3 = newStudMarksSub3;
+        StudMarksSub4 = newStudMarksSub4;
+        StudentStatus = newStudentStatus;
+    }
+    
+    function setDetails(string newStudentName,string newStudentRollNo,string newStudentBatch,uint256 newStudMarksSub1,uint256 newStudMarksSub2,uint256 newStudMarksSub3,uint256 newStudMarksSub4,string newStudentStatus)public{
+        StudentName = newStudentName;
+        StudentRollNo = newStudentRollNo;
+        StudentBatch = newStudentBatch;
+        StudMarksSub1 = newStudMarksSub1;
+        StudMarksSub2 = newStudMarksSub2;
+        StudMarksSub3 = newStudMarksSub3;
+        StudMarksSub4 = newStudMarksSub4;
+        StudentStatus = newStudentStatus;
+    }
+    
+    function getDetails() public view returns(string,string,string,uint256,uint256,uint256,uint256,string)
+    {
+        return (StudentName,StudentRollNo,StudentBatch,StudMarksSub1,StudMarksSub2,StudMarksSub3,StudMarksSub4,StudentStatus);
+    }
+   
+}
+
+
+
+
+TRANSACTION HASH : 0x00fedcdfd5a8385bb38f9d915bc8150ceaae2898492ba8db0769f7c2a1947b23
+from- 0x96b018cc8cb82fc700c7683f7958c366f17049b2
+to-0xa8b4dfc514ff76f5e49d5e917e711380af7844d9
+
+Test Deployment of the Smart Contract can be found in
+0xa8b4dfc514ff76f5e49d5e917e711380af7844d9  in https://rinkeby.etherscan.io/address/0xa8b4dfc514ff76f5e49d5e917e711380af7844d9
+
